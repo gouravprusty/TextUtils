@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Button from "./Button";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "./Navbar.css";
 
 export default function Navbar({title}) {
 
@@ -25,7 +24,7 @@ export default function Navbar({title}) {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link" aria-current="page" href="/">Home</a>
+                            <a className="nav-link" aria-current="page" href="#">Home</a>
                         </li>
                     </ul>
                     <Button content={<i className={`bi bi-${themeContent}-fill`}></i>} classNames="btn py-0 fs-5" clickFunction={toggleTheme} />
